@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Catch</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --page: #eef2f1; --panel: #ffffff; --ink: #0e1413;
+    --ink-2: #4b5957; --accent: #0e7c7b; --border: #d7dedc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page: #0b1211; --panel: #101917; --ink: #eef4f2;
+      --ink-2: #b6c4c1; --accent: #3fcfc9; --border: #223330;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; letter-spacing: -0.01em; }
+  .updated { color: var(--ink-2); font-size: .9rem; margin: 0 0 2rem; }
+  h2 { font-size: 1.1rem; margin: 2.25rem 0 .5rem; }
+  p, li { color: var(--ink-2); }
+  .lede {
+    background: var(--panel); border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px; padding: 1rem 1.25rem; margin: 0 0 1rem;
+  }
+  .lede p { color: var(--ink); margin: 0; font-size: 1.05rem; }
+  strong { color: var(--ink); }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border); font-size: .875rem; color: var(--ink-2); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support — Catch</h1>
+  <p class="updated">Last updated 9 September 2026</p>
+
+  <div class="lede">
+    <p>Catch logs a fish — species, size, where, and the conditions at the time —
+    and keeps it on your phone. Questions, problems and feature requests all go
+    to <a href="mailto:porcelain2015@gmail.com">porcelain2015@gmail.com</a>.</p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <p><strong>How do I log a catch?</strong><br>
+  Tap <em>Log a Catch</em>, pick a species, tap Save. The time, the spot, the
+  weather and the moon phase are filled in for you. Weight and length are
+  optional — open them only if you want them.</p>
+
+  <p><strong>Why is there no weight on some of my catches?</strong><br>
+  Because you didn't record one, and that's a normal thing to do. Catch shows
+  nothing at all rather than a zero, so a catch you didn't weigh still reads as
+  a proper record.</p>
+
+  <p><strong>How do I correct or delete a catch?</strong><br>
+  Tap it in the Catches list to open and edit it, or swipe left on the row to
+  delete. Anything you can create, you can fix.</p>
+
+  <p><strong>Can anyone else see where I fish?</strong><br>
+  No. Your positions are stored on your phone and there is no account, no feed
+  and no server. Exports and shared catches leave positions out unless you
+  switch them on for that one action, and that switch resets to off every time.
+  See the <a href="./catch-privacy.html">privacy policy</a>.</p>
+
+  <p><strong>My catch says "Conditions will fill in when you're back online".</strong><br>
+  That's expected. The catch saved completely — the weather just hasn't been
+  looked up yet because you had no signal. Open the app again once you're back
+  in coverage and it fills itself in. You don't need to do anything.</p>
+
+  <p><strong>Can I stop the app going online at all?</strong><br>
+  Yes. Turn off <em>Record conditions</em> in Settings and Catch makes no
+  network requests whatsoever. New catches save without weather; moon phase
+  still works, because it's worked out on your device from the date.</p>
+
+  <p><strong>My species isn't in the list.</strong><br>
+  Search for it and choose <em>Use "…" as a species</em> — it's saved as typed
+  and appears in your recents afterwards. The bundled list covers freshwater
+  species for UK &amp; Ireland and North America; the globe button in the
+  species picker switches region, or shows everything.</p>
+
+  <p><strong>Does it do sea fishing?</strong><br>
+  Not yet. Catch is built for freshwater. Sea angling needs tide data, which is
+  a real external dependency, and doing it badly would be worse than not doing
+  it — so it's honestly absent rather than half-there.</p>
+
+  <p><strong>Can I use kilograms instead of pounds?</strong><br>
+  Yes — Settings → Units. It changes every catch you've already logged, both
+  ways, with nothing lost. Sizes are stored independently of the units you read
+  them in.</p>
+
+  <p><strong>Will my catches sync between devices?</strong><br>
+  Not in this version. Catch stores everything locally, which is what keeps it
+  private and fast. Your data is included in your normal iPhone backup, and you
+  can export the whole log as CSV from Settings.</p>
+
+  <p><strong>Is there a subscription?</strong><br>
+  No. Catch is a one-time purchase with no subscription, no in-app purchases
+  and no ads.</p>
+
+  <h2>Requesting a feature</h2>
+  <p>Catch is deliberately small, and most of what it doesn't do is on purpose —
+  no feed, no gear shop, no AI fish identification. That said, sea fishing with
+  tides and syncing between devices are both genuinely on the list rather than
+  ruled out. If something is missing that would make logging faster or more
+  accurate at the waterside, say so.</p>
+
+  <footer>Catch — a one-time purchase, no subscription, no data collection.</footer>
+</main>
+</body>
+</html>
